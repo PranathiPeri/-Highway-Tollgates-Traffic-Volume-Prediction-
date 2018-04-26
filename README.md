@@ -17,14 +17,20 @@ The dataset we are using for traffic volume prediction is taken from KDD cup  wh
 Tools and Languages Used
 
 To construct the model, we used Spark engine with python. We used Python to code the neural net. We also used Hadoop distributed file system to store the data for use. We used:
+
 •	pyspark.sql module for creating DataFrame, register DataFrame as tables, execute SQL over tables. 
+
 •	matplotlib.pyplot to visualize data.
 
 
 Best Results:
+
 We obtained the best results using the following parameters:
+
 •	tanh as the sigmoid function
+
 •	16 hidden layers with 3 neurons in each
+
 We first tested by doing a 80/20 split of training data which gave us an MAPE error of 0.013405. We then tried our model on the derived test data which gave an MAPE error of 0.041021.
 
 
